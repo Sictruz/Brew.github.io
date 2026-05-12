@@ -1,0 +1,6 @@
+ANTES DE MEXER NO PROJETO:👇
+git pull
+DEPOIS DE EDITAR:👇
+git add .
+git commit -m "update"
+git push
