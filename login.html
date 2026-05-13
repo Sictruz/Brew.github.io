@@ -3,52 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | BrewBoxd</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo endereco.png">
+  </head>
+  
 <body>
-      <nav class="main-nav">
-
-      <a href="index.html" class="logo-link">
+     <header>
+     <nav class="main-nav">
+    <a href="/" class="logo-link">
         <img src="img/logo.png" alt="Logo" class="logo-img">
-      </a>
-
-      <div class="nav-links">
-       <a href="index.html">Home</a>
-        <a href="#">Explore Cafés</a>
+    </a>
+    <div class="nav-links">
+         <a href="index.html" >Home</a>
+        <a href="explorar.html">Explore Cafés</a>
         <a href="favoritos do mês.html">favoritos</a>
-        <a href="login.html" class="active">Login</a>
-        <a href="cadastro.html">Criar Conta</a>
-      </div>
+        <a href="login.html" class="active">Criar Conta</a>
+        
+    </div>
+</nav>
 
-    </nav>
-     <section class="login-section">
+    </header>
 
-    <div class="login-card">
+<section class="auth-layout">
 
-      <h1>Bem-vindo</h1>
+    <div class="auth-card">
 
-      <p>Entre na sua conta para salvar cafés favoritos.</p>
+        <h1>Fazer Login</h1>
 
-      <form action="">
-        <div   class="input-group">
-            <label for="Email">
-                Email
-            </label>
-            <input type="email" id="Email" name="email" placeholder="Digite seu Email aqui" required> 
-            <label for="Senha">
-                Senha
-            </label>
+        <p>
+           Bem-vindo de volta!
+        </p>
+
+        <form>
+
           
-            <input type="password" id="Senha" name="senha" placeholder="Digite Sua senha aqui (mínimo 6 caracteres)" required minlength="6"> 
-            <input li type="button" value="Não possuo cadastro" >
-          
-          <a href="cafes.html" class="btn">Explorar Cafés</a>
-          </div>
-      </form>
 
-        </div>
-    </section>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
 
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" required>
+            </div>
+
+            <button class="btn">
+                Logar
+            </button>
+
+        </form>
+
+    </div>
+
+    <aside class="auth-aside login-aside">
+
+        <span class="aside-tag">
+            BREWBOXD
+        </span>
+
+        <h2>
+            Deseja criar uma conta?
+        </h2>
+
+        <p>
+            Entre e descubra cafeterias inscriveis em Pelotas.
+        </p>
+
+        <a href="cadastro.html" class="btn aside-btn">
+            cadastrar!
+        </a>
+
+    </aside>
+
+</section>
+<footer class="footer">
+    <p>© 2026 BrewBoxd • Projeto acadêmico</p>
+</footer>
 </body>
 </html>
