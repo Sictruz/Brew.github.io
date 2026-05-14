@@ -1,6 +1,9 @@
+/* ----------------- GOOGLE FONTS ----------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
 
-/* Body -------------------------------------*/
+
+/* ----------------- BODY ----------------- */
 
 body {
     margin: 0;
@@ -11,7 +14,10 @@ body {
     color: #f8f8f8;
 }
 
-/* Header ------------------------------------ */
+
+/* ----------------- HEADER ----------------- */
+
+/* Navbar */
 
 .header-container {
     background: #4a0e0e;
@@ -27,6 +33,65 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Logo */
+
+.logo-link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+/* Nav Links */
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    position: relative;
+
+    color: #E8D1A7;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+/* Página Ativa */
+
+.nav-links a.active {
+    color: #fff;
+}
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 100%;
+    height: 2px;
+
+    background: #E8D1A7;
+
+    border-radius: 999px;
+}
+
+
+/* ----------------- SCROLL TOP ----------------- */
+
 .scroll-top {
     position: fixed;
 
@@ -56,64 +121,8 @@ body {
     z-index: 999;
 }
 
-.scroll-top:hover {
-    background: #8e4427;
 
-    transform: translateY(-5px);
-}
-
-.logo-link {
-    display: flex;
-    align-items: center;
-
-    text-decoration: none;
-}
-
-.logo-img {
-    height: 50px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a,
-.open-modal-label {
-    position: relative;
-
-    color: #E8D1A7;
-
-    text-decoration: none;
-
-    transition: .3s;
-
-    cursor: pointer;
-}
-
-/* Página ativa */
-
-.nav-links a.active {
-    color: #fff;
-}
-
-.nav-links a.active::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: -6px;
-
-    width: 100%;
-    height: 2px;
-
-    background: #E8D1A7;
-
-    border-radius: 999px;
-}
-
-/* Hero */
+/* ----------------- HERO ----------------- */
 
 .hero {
     height: 100vh;
@@ -148,7 +157,8 @@ body {
     font-weight: 300;
 }
 
-/* Buttons */
+
+/* ----------------- BUTTONS ----------------- */
 
 .btn {
     display: inline-block;
@@ -166,7 +176,10 @@ body {
     transition: .3s;
 }
 
-/* Cards */
+
+/* ----------------- CARDS ----------------- */
+
+/* Cards Layout */
 
 .scard {
     max-width: 1400px;
@@ -180,6 +193,8 @@ body {
 
     gap: 25px;
 }
+
+/* Card */
 
 .card {
     width: 250px;
@@ -196,6 +211,8 @@ body {
     transition: .4s;
 }
 
+/* Card Image */
+
 .card img {
     width: 100%;
     height: 100%;
@@ -204,6 +221,8 @@ body {
 
     transition: .4s;
 }
+
+/* Card Overlay */
 
 .card::after {
     content: "";
@@ -217,6 +236,8 @@ body {
 
     transition: .3s;
 }
+
+/* Card Info */
 
 .info {
     position: absolute;
@@ -235,58 +256,12 @@ body {
     margin: 0;
 }
 
-/* Modal */
 
-.modal-checkbox {
-    display: none;
-}
 
-.modal-overlay {
-    display: none;
 
-    position: fixed;
-    inset: 0;
+/* ----------------- INPUTS ----------------- */
 
-    justify-content: center;
-    align-items: center;
-
-    background: rgba(0,0,0,.85);
-
-    z-index: 9999;
-}
-
-.modal-checkbox:checked ~ .modal-overlay {
-    display: flex;
-}
-
-.modal-content {
-    position: relative;
-
-    width: 90%;
-    max-width: 450px;
-
-    padding: 40px;
-
-    background: #2b120a;
-
-    border: 1px solid #4a0e0e;
-    border-radius: 8px;
-}
-
-.close-btn {
-    position: absolute;
-
-    top: 10px;
-    right: 20px;
-
-    color: #E8D1A7;
-
-    font-size: 30px;
-
-    cursor: pointer;
-}
-
-/* Inputs */
+/* Input Group */
 
 .input-group {
     display: flex;
@@ -300,6 +275,8 @@ body {
 
     color: #E8D1A7;
 }
+
+/* Inputs */
 
 .input-group input {
     width: 100%;
@@ -315,13 +292,38 @@ body {
     outline: none;
 }
 
-/* Table */
+/* Search */
+
+.search {
+    width: 260px;
+
+    padding: 14px 20px;
+
+    background: #140907;
+    color: #f8f8f8;
+
+    border: 1px solid #5a2d1d;
+    border-radius: 999px;
+
+    outline: none;
+
+    font-size: .95rem;
+
+    transition: .3s;
+}
+
+
+/* ----------------- TABLE ----------------- */
+
+/* Table Section */
 
 .table-section {
     padding: 80px 5%;
 
     text-align: center;
 }
+
+/* Legend */
 
 .legend {
     text-align: center;
@@ -347,6 +349,8 @@ body {
     font-weight: 300;
 }
 
+/* Table */
+
 .table {
     width: 100%;
     max-width: 950px;
@@ -364,6 +368,8 @@ body {
     box-shadow: 0 0 30px rgba(0,0,0,.4);
 }
 
+/* Table Header */
+
 .table th {
     padding: 20px;
 
@@ -373,6 +379,8 @@ body {
     font-size: 1rem;
     letter-spacing: 1px;
 }
+
+/* Table Data */
 
 .table td {
     padding: 20px;
@@ -384,9 +392,13 @@ body {
     transition: .3s;
 }
 
+/* Table Row */
+
 .table tr {
     cursor: pointer;
 }
+
+/* Table Image */
 
 .table img {
     width: 85px;
@@ -399,6 +411,8 @@ body {
     transition: .4s;
 }
 
+/* Special Row */
+
 .special-row {
     padding: 20px;
 
@@ -409,7 +423,10 @@ body {
     letter-spacing: 1px;
 }
 
-/* Auth */
+
+/* ----------------- AUTH ----------------- */
+
+/* Auth Layout */
 
 .auth-layout {
     min-height: calc(100vh - 90px);
@@ -425,6 +442,8 @@ body {
 
     gap: 60px;
 }
+
+/* Auth Card */
 
 .auth-card {
     width: 420px;
@@ -445,6 +464,8 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+/* Aside */
+
 .auth-aside {
     width: 420px;
     height: 620px;
@@ -456,16 +477,21 @@ body {
     justify-content: flex-end;
 
     border-radius: 24px;
+
     background:
         linear-gradient(to top, rgba(0,0,0,.88), rgba(0,0,0,.2)),
         url("img/login-bg.jpg") center/cover;
 }
+
+/* Cadastro Aside */
 
 .cadastro-aside {
     background:
         linear-gradient(to top, rgba(0,0,0,.88), rgba(0,0,0,.2)),
         url("img/cadastro-bg.jpg") center/cover;
 }
+
+/* Aside Tag */
 
 .aside-tag {
     margin-bottom: 20px;
@@ -475,6 +501,8 @@ body {
     font-size: .8rem;
     letter-spacing: 3px;
 }
+
+/* Aside Title */
 
 .auth-aside h2 {
     margin-bottom: 20px;
@@ -487,6 +515,8 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+/* Aside Text */
+
 .auth-aside p {
     margin-bottom: 30px;
 
@@ -495,26 +525,25 @@ body {
     line-height: 1.7;
 }
 
+/* Aside Button */
+
 .aside-btn {
     width: fit-content;
 }
 
-/* Footer */
 
-.footer {
-    padding: 30px;
+/* ----------------- RANKING ----------------- */
 
-    text-align: center;
+/* Ranking Section */
 
-    background: #140907;
-    color: #E8D1A7;
-}
 .ranking-section {
     max-width: 900px;
 
     margin: 80px auto;
     padding: 40px;
 }
+
+/* Tag */
 
 .tag {
     color: #E8D1A7;
@@ -523,6 +552,8 @@ body {
 
     font-size: .8rem;
 }
+
+/* Ranking Title */
 
 .ranking-section h2 {
     margin-bottom: 40px;
@@ -534,6 +565,8 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+/* Ranking List */
+
 .coffee-ranking {
     display: flex;
     flex-direction: column;
@@ -542,6 +575,8 @@ body {
 
     padding-left: 25px;
 }
+
+/* Ranking Item */
 
 .coffee-ranking li {
     display: flex;
@@ -560,7 +595,7 @@ body {
     cursor: pointer;
 }
 
-
+/* Ranking Image */
 
 .coffee-ranking img {
     width: 90px;
@@ -570,6 +605,8 @@ body {
 
     border-radius: 14px;
 }
+
+/* Ranking Info */
 
 .ranking-info h3 {
     margin: 0;
@@ -584,42 +621,46 @@ body {
 }
 
 
-.search {
-    width: 260px;
+/* ----------------- FOOTER ----------------- */
 
-    padding: 14px 20px;
+.footer {
+    padding: 30px;
+
+    text-align: center;
 
     background: #140907;
-    color: #f8f8f8;
-
-    border: 1px solid #5a2d1d;
-    border-radius: 999px;
-
-    outline: none;
-
-    font-size: .95rem;
-
-    transition: .3s;
+    color: #E8D1A7;
 }
 
-/* Hovers ----------------- */
+
+/* ----------------- HOVERS ----------------- */
+
+/* Scroll Top */
+
+.scroll-top:hover {
+    background: #8e4427;
+
+    transform: translateY(-5px);
+}
+
+/* Navbar */
 
 .nav-links a:hover,
-.open-modal-label:hover {
-    color: #fff;
 
-    transform: translateY(-3px);
-}
 
 .main-nav .nav-links a:hover {
     text-shadow: 0 0 10px rgba(232, 209, 167, 0.4);
 }
+
+/* Buttons */
 
 .btn:hover {
     background: #8e4427;
 
     transform: translateY(-3px);
 }
+
+/* Cards */
 
 .card:hover {
     transform: translateY(-8px);
@@ -632,6 +673,8 @@ body {
 .card:hover::after {
     opacity: 1;
 }
+
+/* Table */
 
 .table tr:hover td {
     background: #24110b;
@@ -647,11 +690,16 @@ body {
 .table tr:hover img {
     transform: scale(1.08);
 }
+
+/* Ranking */
+
 .coffee-ranking li:hover {
     transform: translateX(8px);
 
     background: #24110b;
 }
+
+/* Search */
 
 .search:hover {
     background: #1d0d08;
