@@ -509,8 +509,100 @@ body {
     background: #140907;
     color: #E8D1A7;
 }
+.ranking-section {
+    max-width: 900px;
 
-/* Hovers */
+    margin: 80px auto;
+    padding: 40px;
+}
+
+.tag {
+    color: #E8D1A7;
+
+    letter-spacing: 3px;
+
+    font-size: .8rem;
+}
+
+.ranking-section h2 {
+    margin-bottom: 40px;
+
+    font-size: 3rem;
+
+    color: #fff;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.coffee-ranking {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding-left: 25px;
+}
+
+.coffee-ranking li {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px;
+
+    background: #140907;
+
+    border-radius: 18px;
+
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+
+
+.coffee-ranking img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+.ranking-info h3 {
+    margin: 0;
+
+    color: #E8D1A7;
+}
+
+.ranking-info p {
+    margin-top: 6px;
+
+    color: #d8c7b0;
+}
+
+
+.search {
+    width: 260px;
+
+    padding: 14px 20px;
+
+    background: #140907;
+    color: #f8f8f8;
+
+    border: 1px solid #5a2d1d;
+    border-radius: 999px;
+
+    outline: none;
+
+    font-size: .95rem;
+
+    transition: .3s;
+}
+
+/* Hovers ----------------- */
 
 .nav-links a:hover,
 .open-modal-label:hover {
@@ -554,4 +646,25 @@ body {
 
 .table tr:hover img {
     transform: scale(1.08);
+}
+.coffee-ranking li:hover {
+    transform: translateX(8px);
+
+    background: #24110b;
+}
+
+.search:hover {
+    background: #1d0d08;
+
+    border-color: #8e4427;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 0 20px rgba(116,48,20,.25);
+}
+
+.search:focus {
+    border-color: #E8D1A7;
+
+    box-shadow: 0 0 25px rgba(232,209,167,.15);
 }
