@@ -250,11 +250,7 @@ body {
     background: linear-gradient(to top, rgba(0,0,0,.75), transparent);
 }
 
-.info h3,
-.rating,
-.location {
-    margin: 0;
-}
+
 
 
 
@@ -573,7 +569,7 @@ body {
 
     gap: 20px;
 
-    padding-left: 25px;
+   
 }
 
 /* Ranking Item */
@@ -645,13 +641,13 @@ body {
 
 /* Navbar */
 
-.nav-links a:hover,
+.nav-links a:hover {
+    color: #fff;
 
+    transform: translateY(-3px);
 
-.main-nav .nav-links a:hover {
     text-shadow: 0 0 10px rgba(232, 209, 167, 0.4);
 }
-
 /* Buttons */
 
 .btn:hover {
@@ -715,4 +711,104 @@ body {
     border-color: #E8D1A7;
 
     box-shadow: 0 0 25px rgba(232,209,167,.15);
+}
+
+/* ----------------- RESPONSIVIDADE para o celular (usei ia pra isso) ----------------- */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .main-nav {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Hero */
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+
+        padding: 0 20px;
+    }
+
+    /* Cards */
+
+    .scard {
+        padding: 30px 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* Auth */
+
+    .auth-layout {
+        flex-direction: column;
+
+        padding: 30px 20px;
+    }
+
+    .auth-card,
+    .auth-aside {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .auth-aside {
+        height: 400px;
+    }
+
+    /* Ranking */
+
+    .ranking-section {
+        padding: 20px;
+    }
+
+    .ranking-section h2 {
+        font-size: 2rem;
+    }
+
+    .coffee-ranking li {
+        align-items: flex-start;
+    }
+
+    .coffee-ranking img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Table */
+
+    .table {
+        font-size: .9rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 12px;
+    }
+
 }
